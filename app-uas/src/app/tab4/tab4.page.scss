@@ -1,0 +1,50 @@
+
+
+.header-row {
+  background-color: #4285f4; /* Ganti dengan warna yang diinginkan untuk header row */
+  color: white; /* Ganti dengan warna teks yang sesuai dengan latar belakang */
+
+    font-weight: bold;
+  }
+  
+  ion-row {
+    border-bottom: 1px solid #ccc; // Garis pemisah antar baris
+    padding: 10px; // Padding antar kolom
+  }
+  
+  ion-col {
+    text-align: center; // Pusatkan teks di setiap kolom
+  }
+  
+  // Media queries untuk responsivitas
+  @media (max-width: 600px) {
+    .header-row {
+      font-size: 14px; // Ukuran font lebih kecil untuk layar kecil
+    }
+  
+    ion-row {
+      font-size: 12px; // Ukuran font lebih kecil untuk layar kecil
+    }
+  }
+  
+  ion-content {
+    --background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)),
+                  url('https://i.ibb.co/sPSBfhd/biru.jpg') center/cover no-repeat fixed;
+    /* Sesuaikan nilai opacity dan warna gradient sesuai kebutuhan */
+      --background: #ffffff; /* Ganti dengan warna yang diinginkan, misalnya #e0e0e0 */
+    
+    }
+  
+    .highlight-text {
+      color: #ffffff; /* Ganti dengan warna teks yang sesuai dengan status 'Menunggu Verifikasi Pendaftaran' */
+      background-color: #b70a0ad3; /* Ganti dengan warna latar belakang yang diinginkan */
+      border-radius: 10px; /* Ganti nilai dengan tingkat border radius yang diinginkan */
+
+    }
+    
+    .highlight-text1 {
+      color: #f3f3f3; /* Ganti dengan warna teks yang sesuai dengan status 'Verifikasi Pendaftaran OK.' */
+      background-color: #06911db4; /* Ganti dengan warna latar belakang yang diinginkan */
+      border-radius: 10px; /* Ganti nilai dengan tingkat border radius yang diinginkan */
+
+    }

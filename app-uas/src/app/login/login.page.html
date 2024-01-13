@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <form (ngSubmit)="login()" class="login-form">
+   
+    <div class="logo-container">
+      <img src="https://i.ibb.co/4T6827Q/logo-UNBIN-removebg-preview.png" alt="" />
+    </div>
+
+    <ion-item class="input-item">
+      <ion-input
+        type="text"
+        [(ngModel)]="username"
+        name="username"
+        placeholder=" Email"
+        clearInput
+      ></ion-input>
+    </ion-item>
+    <ion-item class="input-item">
+      <ion-input
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        placeholder=" Password"
+        clearInput
+      ></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit" class="login-button"
+      >Login</ion-button
+    >
+  </form>
+  <div *ngIf="showErrorMessage" class="error-message">
+    NPM atau PASSWORD yang anda masukan salah!!!
+  </div>
+</ion-content>
+  

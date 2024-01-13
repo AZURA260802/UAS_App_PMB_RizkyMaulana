@@ -1,0 +1,47 @@
+.container {
+  background-image: url('https://i.ibb.co/x6MgYTc/biru.jpg');
+  background-size: cover; /* Untuk mengatur ukuran gambar agar selalu menutupi seluruh elemen */
+  background-position: center; /* Untuk mengatur posisi gambar agar selalu berada di tengah elemen */
+}
+
+
+
+ion-content {
+  --background: rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.container img {
+  -webkit-animation: fade-in 5s cubic-bezier(0.39, 0.575, 0.565, 1) backwards;
+  animation: fade-in 5s cubic-bezier(0.39, 0.575, 0.565, 1) backwards;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-height: 100%; /* Ensure the image doesn't exceed its container */
+  width: auto;
+  height: auto;
+  max-width: 150vw; /* Adjust as needed to control the maximum width */
+  max-height: 150vh; /* Adjust as needed to control the maximum height */
+}
